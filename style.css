@@ -52,21 +52,21 @@ height: 216px;
 }
 
 .text h1{
-width: 305px;
+width: 100%;
 height: 120px;
 font-size: 52px;
 font-weight: 700;
 }
 
 .text p {
-width: 325px;
+width: 100%;
 height: 72px;
 font-weight: 400;
 font-size: 18px;
 margin-top: 24px; 
 }
 
-.sub-content{
+.sub-content {
 width: 1280px;
 height: 400px; 
 margin: 150px auto;
@@ -189,7 +189,6 @@ line-height: 20px;
 @media (max-width: 768px) {
 header {
 width: 768px;
-background-color: beige;
 }
 
 #main-content .hero-page {
@@ -219,18 +218,15 @@ font-size: 20px;
 .feature-section {
 width: 768px;
 height: 1050px;
-background-color: aqua;
 padding: 0px;
 }
 
 .id-aliquam-text {
 width: 600px;
 height: 190px;
-background-color: beige;
 }
 
 .id-aliquam-text h2 {
-background-color: blueviolet;
 font-size: 38px;
 }
 
@@ -242,13 +238,115 @@ font-size: 20px;
 display: flex;
 flex-direction: column;
 width: 768px;
-height: 800px;
+height: 1000px;
 }
 
 .icon-logo {
-width: 668px;
+width: 500px;
+padding: 40px;
+height: 800px;
+margin: 0px auto;
+}
 }
 
+@media (max-width: 375px) {
+header {
+width: 375px;
+padding: 0px 20px;
+}
 
+ul li {
+display: none;
+}
 
+.line1,
+.line2,
+.line3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+#main-content .hero-page {
+width: 375px;
+height: 748px;
+background-position: 60%;
+}
+
+aside {
+width: 360px;
+padding: 40px 40px;
+height: 232px;
+margin-top: 20px;
+}
+
+aside .text {
+width: 296px;
+height: 150px;
+}
+
+aside .text h1 {
+font-size: 35px;
+height: 75px;
+}
+
+.sub-content {
+flex-direction: column;
+width: 342px;
+height: 552px;
+margin: 60px auto;
+}
+
+.img1 {
+border-radius: 20px 0 0 0;
+}
+
+.img2 {
+border-radius: 0 20px 0 0 ;  
+}
+
+.img3 {
+border-radius: 0 0 0 0;
+}
+
+.flexible-text {
+padding: 32px ;  
+border-radius: 0 0 20px 20px;
+}
+.side-text h1 {
+font-size: 30px;
+}
+
+.feature-section {
+width: 375px;
+height: 980px;
+margin-top: 0px;
+}
+
+.id-aliquam-text {
+width: 343px;
+height: 220px;
+}
+
+.id-aliquam-text h2{
+font-size: 30px;
+}
+
+.id-aliquam-text p{
+font-size: 16px;
+margin-top: 10px;
+}
+
+.icon-tag {
+width: 343px;
+gap: 15px;
+}
+
+.icon-logo {
+width: 100%;
+height: 300px;
+
+}
 }
